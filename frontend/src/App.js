@@ -11,6 +11,9 @@ import AddTrade from './pages/AddTrade';
 import EditTrade from './pages/EditTrade';
 import TradeDetail from './pages/TradeDetail';
 import Analytics from './pages/Analytics';
+import TradingRules from './pages/TradingRules';
+import AddTradingRule from './pages/AddTradingRule';
+import EditTradingRule from './pages/EditTradingRule';
 
 function App() {
   return (
@@ -66,6 +69,30 @@ function App() {
               element={
                 <PrivateRoute>
                   <Analytics />
+                </PrivateRoute>
+              }
+            />
+            <Route
+              path="/trading-rules"
+              element={
+                <PrivateRoute>
+                  <TradingRules />
+                </PrivateRoute>
+              }
+            />
+            <Route
+              path="/trading-rules/add"
+              element={
+                <PrivateRoute>
+                  <AddTradingRule />
+                </PrivateRoute>
+              }
+            />
+            <Route
+              path="/trading-rules/edit/:id"
+              element={
+                <PrivateRoute>
+                  <EditTradingRule />
                 </PrivateRoute>
               }
             />

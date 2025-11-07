@@ -27,4 +27,11 @@ export const getPerformance = (period) => API.get('/analytics/performance', {
   params: { period }
 });
 
+// Trading Rules API
+export const getTradingRules = (params) => API.get('/trading-rules', { params });
+export const getTradingRule = (id) => API.get(`/trading-rules/${id}`);
+export const createTradingRule = (ruleData) => API.post('/trading-rules', ruleData);
+export const updateTradingRule = (id, ruleData) => API.put(`/trading-rules/${id}`, ruleData);
+export const deleteTradingRule = (id) => API.delete(`/trading-rules/${id}`);
+
 export default API;

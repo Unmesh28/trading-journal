@@ -26,6 +26,9 @@ const Navbar = () => {
             <Link to="/trades" className="navbar-link">
               Trades
             </Link>
+            <Link to="/trading-rules" className="navbar-link">
+              Trading Rules
+            </Link>
             <Link to="/analytics" className="navbar-link">
               Analytics
             </Link>

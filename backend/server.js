@@ -21,6 +21,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/api/auth', require('./src/routes/auth.routes'));
 app.use('/api/trades', require('./src/routes/trade.routes'));
 app.use('/api/analytics', require('./src/routes/analytics.routes'));
+app.use('/api/trading-rules', require('./src/routes/tradingRule.routes'));
 
 // Health check route
 app.get('/health', (req, res) => {
