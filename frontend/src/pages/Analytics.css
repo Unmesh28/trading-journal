@@ -1,0 +1,81 @@
+.analytics-page {
+  padding: 20px 0;
+}
+
+.analytics-page h1 {
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+.stats-section {
+  margin-bottom: 40px;
+}
+
+.stats-section h2 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.charts-section {
+  margin-top: 40px;
+}
+
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.chart-header h2 {
+  color: #2c3e50;
+}
+
+.period-selector {
+  display: flex;
+  gap: 10px;
+}
+
+.period-selector button {
+  padding: 8px 16px;
+  border: 2px solid #ddd;
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.period-selector button:hover {
+  border-color: #3498db;
+  color: #3498db;
+}
+
+.period-selector button.active {
+  background-color: #3498db;
+  color: white;
+  border-color: #3498db;
+}
+
+.charts-section h3 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+  font-size: 18px;
+}
+
+.charts-section .card {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .chart-header {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .period-selector {
+    flex-wrap: wrap;
+  }
+}
